@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title></title>
+		<script type="text/javascript">
+			(function(doc, win) {
+				var docEl = doc.documentElement,
+					resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+					recalc = function() {
+						var clientWidth = docEl.clientWidth;
+						if(!clientWidth) return;
+						docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+					};
+				if(!doc.addEventListener) return;
+				win.addEventListener(resizeEvt, recalc, false);
+				doc.addEventListener('DOMContentLoaded', recalc, false);
+			})(document, window);
+		</script>
+		<link rel="stylesheet" type="text/css" href="css/bjdx.css"/>
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<span><img src="img/jiantou.jpg"></span>
+				<input type="text"  class="txt" value="发个电话是分解符也福尔个人股"/>
+				<dl>
+					<dt><img src="img/fangzi.jpg"></dt>
+					<a href="dayang.html"><dd>我的店铺</dd></a>
+				</dl>
+			</header>
+			<section>
+				<div class="bj">
+					<span><img src="img/hai.jpg"></span>
+				</div>
+				
+				<div class="bj1">
+					<b><img src="img/qiu.jpg"></b>
+					<p>您所在的学校还没有一个小管家<br>&nbsp;&nbsp;&nbsp;&nbsp;快去申请成为小管家</p>
+				
+					<input type="text"  class="txt" value="申请成为小管家"/>
+				</div>
+			</section>
+			<footer>
+				  
+			</footer>
+		</div>
+	</body>
+</html>

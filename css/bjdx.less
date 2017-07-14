@@ -1,0 +1,116 @@
+
+@import url(m_style.css);
+.full(@w, @h, @bg) {
+    width: @w;
+    height: @h;
+    background: @bg;
+}
+
+//封装弹性盒
+.box(@ver:horizontal) {
+    display: -webkit-box;
+    -webkit-box-orient: @ver;
+}
+html {
+    font-size: 62.5%;
+}
+.container,
+body,
+html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.container{
+//  -webkit-box-flex: 1;
+.box(vertical);
+
+    header{
+         .full(100%,0.93rem,#4194f0);
+         .box;
+         span{
+             img {
+                 .full(0.4rem,auto,none);
+                 margin-top: .3rem;
+                 margin-left: .3rem;
+             }
+         }
+         .txt{
+             width: 3rem;
+             height: 0.48rem;
+             margin-left: 0.9rem;
+             margin-top: 0.23rem;
+             box-sizing: border-box-box;
+//           border: none;
+             border-radius: 0.25rem;
+             background-color: #3586e1;
+             White-space:nowrap;
+             Overflow:hidden;
+            Text-overflow:ellipsis;
+            color: #fff;
+            border: 1px solid #3586e1;
+            background: url(../img/lanse.jpg) no-repeat 0.2rem  center;
+             padding-left: .5rem;
+             background-size: 0.27rem;
+         }
+         dl{
+             dt{
+                 img{
+                     .full(0.33rem,auto,none);
+                     margin-top: 0.22rem;
+                     margin-left: 0.5rem;
+                 }
+             }
+             dd{
+                 margin-left: 0.3rem;
+                 color: #fff;
+                 margin-top: 0.1rem;
+             }
+         }
+    }
+    section{
+        overflow: auto;
+    -webkit-box-flex: 1;
+        .bj{
+            span{
+                img{
+                    .full(6.4rem,auto,none);
+                }
+            }
+        }
+        
+        .bj1{
+              .full(6rem,auto,none);
+            b{
+                img{
+                    .full(2.33rem,auto,none);
+                    margin-left: 2.05rem;
+                    margin-top: 0.8rem;
+                }
+            }
+            
+            p{
+                margin-left: 1.24rem;
+                margin-top: 0.3rem;
+                font-size:0.3rem;
+                color: #BBBBBB;
+            }
+            .txt{
+                width: 3.41rem;
+                height:0.75rem;
+                margin-left: 1.50rem;
+                margin-top: 0.45rem;
+                border-radius: 0.35rem;
+                border: 1px solid #4194f0;
+                 font-size: 0.3rem;
+                 text-align: center;
+                 color: #4194f0;
+            }
+        }
+    }
+    footer{
+        
+        .full(100%,1.05rem,red);
+        
+    }
+}

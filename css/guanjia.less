@@ -1,0 +1,386 @@
+
+@import url(m_style.css);
+.full(@w, @h, @bg) {
+    width: @w;
+    height: @h;
+    background: @bg;
+}
+
+//封装弹性盒
+.box(@ver:horizontal) {
+    display: -webkit-box;
+    -webkit-box-orient: @ver;
+}
+html {
+    font-size: 62.5%;
+}
+.container,
+body,
+html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    .box(vertical);
+    header {
+        .full(100%,0.88rem,#4194f0);
+        .box;
+        span {
+
+            img {
+                .full(0.38rem,auto,none);
+                margin-left: 30px;
+                margin-top: 12px;
+            }
+        }
+        a {
+            font-size: 0.32rem;
+            margin-left: 120px;
+            margin-top: 10px;
+            display: block;
+            color: #fff;
+            font-weight: bold;
+        }
+    }
+    section {
+        overflow: auto;
+        -webkit-box-flex: 1;
+        background: #f3f3f5;
+        .nav {
+            .full(100%,0.88rem,#f3f3f5);
+            .txt {
+                width: 580px/640px*100%;
+                width: 5.3rem;
+                height: 0.7rem;
+                margin-left: 15px;
+                margin-top: 5px;
+                border: none;
+                padding-left: 43px;
+                color: #BBBBBB;
+               background:  #fff url(../img/sou.jpg) no-repeat 0.09rem center; 
+               background-size: 0.3rem; 
+               border: 1px solid #E3E3E3;             
+            }
+        }
+        .nav1 {
+            .full(100%,1.22rem,#fff);
+            h3 {
+                padding-top: 0.02rem;
+                img {
+                    .full(0.23rem,auto,none);
+                }
+                a {
+                    font-size: 0.26rem;
+                    color: #BBBBBB;
+                    margin-left: 0.3rem;
+                    margin-top: -0.3rem;
+                    display: block;
+                }
+            }
+            h4 {
+                margin-left: 0.6rem;
+                margin-top: 0.18rem;
+                font-size: 0.28rem;
+                color: #4194f0;
+            }
+        }
+        //nav1
+
+        .nav2 {
+            .full(100%,8rem,pink);
+            .box;
+            .left {
+                -webkit-box-flex: 1;
+                .full(5.88rem,8rem,#fff);
+                .a{
+                    .full(5.88rem,0.52rem,#f3f3f5);
+                    H1{
+                        margin-left: 0.3rem;
+                        padding-top: 0.1rem;
+                        font-size: 0.3rem;
+                        
+                    }
+                }
+                .b{
+                    .full(5.88rem,0.95rem,#fff);
+//                  border-bottom: 1px solid #BBBBBB;
+                    h4{
+                        padding-top: 0.32rem;
+                        margin-left: 0.3rem;
+                        font-size: 0.3rem;
+                        color: #4194f0;
+                        font-weight: normal;
+                    }
+                }
+                
+                
+                .c{
+                    .full(5.88rem,0.95rem,#fff);
+//                  border-bottom: 1px solid #BBBBBB;
+                    h4{
+                        padding-top: 0.32rem;
+                        margin-left: 0.3rem;
+                        font-size: 0.3rem;
+                      
+                        font-weight: normal;
+                    }
+                }
+                
+            }
+
+            .right {
+                .full(0.50rem,8rem,#fff);
+                ul{
+                     margin-top: 0.3rem;
+                    li{
+                      font-size: 0.1rem;
+                      margin-left: 0.15rem;
+                      color: #4194f0;
+                    }
+                }
+            }
+        }
+
+    }
+    footer {
+           .full(.8rem,.8rem,#4194f0);
+               position: relative;
+           left: 180px;
+           top: -350px;
+           p{
+               margin-top: .25rem;
+               margin-left: .3rem;
+               font-size: .3rem;
+               color: #fff;           
+           }
+
+    }
+}//首页
+
+//支付页面
+
+.page{
+    .full(100%,1rem,#fff);
+    .box;
+    span{
+        img{
+            .full(0.36rem,auto,none);
+            margin-top: 0.34rem;
+            margin-left: 0.31rem;
+        }
+    }
+    h1{
+          -webkit-box-flex: 1;
+         
+          margin-top: 0.32rem;
+          margin-left: 0.21rem;
+          font-size: 0.3rem;
+          font-weight: normal;
+          
+    }
+    h2{
+        margin-right: .3rem;
+       padding-top: .3rem;
+       font-size: .3rem;
+       color: #4194f0;   
+       a{
+           font-size: .4rem;
+             color: #4194f0;
+       }
+    }
+}
+//page
+
+.page1{
+    .full(100%,0.76rem,#f3f4f8);
+    .box;
+    h1{
+        
+        margin-left: .3rem;
+       padding-top: .3rem;
+       font-size: .25rem;
+       color: #646466;
+    }
+    
+}
+//page1
+
+
+.pay{
+    .full(100%,.9rem,#fff);
+    .box;
+    border-bottom: 1px solid #BBBBBB;
+    input[type='radio']{
+        display: none;
+        &+label{
+            width: .38rem;
+            height: .38rem;
+            background: url(../img/checked-mark.png) no-repeat bottom;
+            background-size:.38rem auto;
+            display: block;
+            margin-top: .26rem;
+            margin-left: .31rem;
+        }
+        &:checked+label{
+            background-position: 0 0 ;
+        }
+        
+    }
+    
+    p{
+        img{
+            .full(.39rem,auto,none);
+            margin-top: .26rem;
+            margin-left: .26rem;
+        }
+    }
+    h6{
+         -webkit-box-flex: 1;
+           margin-top: .24rem;
+            margin-left: .26rem;
+            font-size: .3rem;
+            color: #222222;
+    }
+    h5{
+        margin-top: .24rem;
+        color: #fd2661;
+        font-size: .3rem;
+        margin-right: .3rem;
+    }
+   
+}
+//pay
+
+//school学校
+
+.school{
+    .full(100%,1rem,#fff);
+    .box;
+    h3{
+        border-bottom: 1px solid #BBBBBB;
+        -webkit-box-flex: 1;
+        
+        margin-left: .31rem;
+        padding-top: .33rem;
+        color: #75abf3;
+        font-size: .27rem;
+        font-weight: normal;
+        a{
+           margin-left: 4rem;
+           color: #75abf3;
+        }
+    }
+}
+
+.school1{
+    .full(100%,1rem,#fff);
+    .box;
+    h3{
+        border-bottom: 1px solid #BBBBBB;
+        -webkit-box-flex: 1;
+        
+        margin-left: .31rem;
+        padding-top: .33rem;
+        color: #1B1C20;
+        font-size: .27rem;
+        font-weight: normal;
+        
+    }
+}
+//搜索学校
+
+.sou{
+    .full(100%,0.9rem,#f3f3f5);
+    
+    .txt{
+        width: 4.85rem;
+        height: 0.57rem;
+        margin-top: 0.14rem;
+        margin-left: 0.28rem;
+        background: #fff url(../img/ssssss.jpg) no-repeat left center;
+        padding-left: .5rem;
+        box-sizing: border-box;
+        border: none;
+        
+    }
+    .btn{
+        width: 0.85rem;
+         height: 0.57rem;
+         margin-left: .15rem;
+         margin-top: 0.14rem;
+         text-align: center;
+    }
+}
+
+//未找到您所在的学校
+.center{
+    .full(100%,4.3rem,none);
+    span{
+        img{
+            .full(1.33rem,auto,none);
+            margin-left: 2.55rem;
+            margin-top: 2.29rem;
+        }
+    }
+    h4{
+        margin-left: 1.19rem;
+        margin-top: .35rem;
+        font-size: .33rem;
+        color: #BBBBBB;
+    }
+}
+
+//填写备注
+
+.textarea{
+    .txt{
+        width: 5.96rem;
+        height: 2.34rem;
+        margin-left: .22rem;
+        margin-top: .22rem;
+        outline: none;
+       
+        box-sizing: content-box;
+    }
+    p{
+        margin-top: -2.1rem;
+        margin-left: 0.4rem;
+        font-size: 0.26rem;
+        color: #BBBBBB;
+    }
+    
+    h6{
+        margin-top: 1.86rem;
+        margin-left: 4rem;
+        color: #BBBBBB;
+            a{
+                color: #FFA500;
+            }
+        
+    }
+}
+//sousuo学校 @bg
+.school2{
+    .full(100%,1rem,#fff);
+    .box;
+    h3{
+        border-bottom: 1px solid #BBBBBB;
+        -webkit-box-flex: 1;
+        
+        margin-left: .31rem;
+        padding-top: .33rem;
+        color: #1B1C20;
+        font-size: .27rem;
+        font-weight: normal;
+        a{
+         margin-left: 4rem;
+           color: #75abf3;   
+        }
+        
+    }
+}
+//北京大学
+
+

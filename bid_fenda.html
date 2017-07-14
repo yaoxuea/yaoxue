@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title></title>
+		<script type="text/javascript">
+			(function(doc, win) {
+				var docEl = doc.documentElement,
+					resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+					recalc = function() {
+						var clientWidth = docEl.clientWidth;
+						if(!clientWidth) return;
+						docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+					};
+				if(!doc.addEventListener) return;
+				win.addEventListener(resizeEvt, recalc, false);
+				doc.addEventListener('DOMContentLoaded', recalc, false);
+			})(document, window);
+		</script>
+		<link rel="stylesheet" type="text/css" href="css/dayang.css" />
+	</head>
+
+	<body>
+		<div class="container">
+			<header>
+				<span><img src="img/jiantou.jpg"></span>
+				<h3>杭州西子湖四季三星全商务国连锁</h3>
+			</header>
+			<section>
+				<div class="nav">
+					<span><img src="img/fangzi.png"></span>
+					<b><img src="img/dayang.png"></b>
+					<h2><img src="img/biaoshi.png"></h2>
+					<ul>
+						<li>商品 22中</li>
+						<li>|</li>
+						<li>起送 0￥</li>
+					</ul>
+					<h4><img src="img/wujiaoxing.png"></h4>
+				</div>
+
+				<div class="nav1">
+					<ol>
+						<li>
+							<a href="#">商品</a>
+						</li>
+						<li>
+							<a href="#">详情</a>
+						</li>
+						<li>
+							<a href="#">评价</a>
+						</li>
+					</ol>
+				</div>
+				<div class="main">
+					<div class="left">
+						<ul>
+							<li>
+								<a href="#">方便速食</a>
+							</li>
+							<li>
+								<a href="#">超值礼盒
+									<p>装饮料</p>
+								</a>
+							</li>
+							<li>
+								<a href="#">休闲零食</a>
+							</li>
+							<li>
+								<a href="#">饼干糕点</a>
+							</li>
+							<li>
+								<a href="#">糖果冲印</a>
+							</li>
+							<li>
+								<a href="#">泡面火腿</a>
+							</li>
+
+						</ul>
+					</div>
+					<div class="right">
+						<div class="a">
+							<ul>
+								<li>辣条</li>
+								<li>薯片</li>
+								<li>饮料</li>
+								<li>啤酒</li>
+								<li>西服</li>
+							</ul>
+						</div>
+
+						<div class="b">
+							<dl>
+								<dt id="one"><img src="img/niu.png"></dt>
+								<dd>
+									<h3>香菇肥牛味牛肉20g/袋</h3>
+									<p>
+										<a href="#">库存： 20袋</a>
+									</p>
+									<p><b>¥5.03</b><span><img src="img/shi.jpg"></span></p>
+
+								</dd>
+							</dl>
+							<h4><img src="img/jiahao.png"></h4>
+
+							<form>
+								<input type="text" class="txt" value="1016-08-30结束" /><input type="button" class="btn" value="限时折扣" />
+							</form>
+						</div>
+						<div class="b">
+							<dl>
+								<dt id="two"><img src="img/guod.png"></dt>
+								<dd>
+									<h3>香菇肥牛味牛肉20g/袋</h3>
+									<p>
+										<a href="#">库存： 20袋</a>
+									</p>
+									<p><b>¥5.03</b></p>
+
+								</dd>
+							</dl>
+							<h4><img src="img/jiahao.png"></h4>
+						</div>
+						<div class="b">
+							<dl>
+								<dt><img src="img/niu.png"></dt>
+								<dd>
+									<h3>香菇肥牛味牛肉20g/袋</h3>
+									<p>
+										<a href="#">库存： 20袋</a>
+									</p>
+									<p><b>¥5.03</b></p>
+
+								</dd>
+							</dl>
+							<h4><img src="img/jiahao.png"></h4>
+						</div>
+						<div class="b">
+							<dl>
+								<dt><img src="img/guod.png"></dt>
+								<dd>
+									<h3>香菇肥牛味牛肉20g/袋</h3>
+									<p>
+										<a href="#">库存： 20袋</a>
+									</p>
+									<p><b>¥5.03</b></p>
+
+								</dd>
+							</dl>
+							<h4><img src="img/jiahao.png"></h4>
+						</div>
+
+						<div class="b">
+							<dl>
+								<dt><img src="img/fenda.png"></dt>
+								<dd>
+									<h3>香菇肥牛味牛肉20g/袋</h3>
+									<p>
+										<a href="#">库存： 20袋</a>
+									</p>
+									<p><b>¥5.03</b></p>
+
+								</dd>
+							</dl>
+							<h4><img src="img/jiahao.png"></h4>
+						</div>
+						<div class="b">
+							<dl>
+								<dt><img src="img/fenda.png"></dt>
+								<dd>
+									<h3>香菇肥牛味牛肉20g/袋</h3>
+									<p>
+										<a href="#">库存： 20袋</a>
+									</p>
+									<p><b>¥5.03</b></p>
+
+								</dd>
+							</dl>
+							<h4><img src="img/jiahao.png"></h4>
+						</div>
+						<img src="img/youhui.png" class="you">
+					</div>
+				</div>
+
+			</section>
+			<footer>
+				<div class="last">
+					<div class="left">
+						<input type="text" class="txt" />
+						<h2>¥0</h2>
+					</div>
+					<div class="right">
+						<a href="zhezhao_xiaogu.html"><span>¥0起送</span></a>
+					</div>
+
+				</div>
+			</footer>
+
+		</div>
+      
+		<div class="zhezhao" id="zhezhao">
+			<div class="inner">
+				<div class="close" id="close">
+                         
+				</div>
+				<div class="fenda">
+					<img src="img/dafenda.png">
+				</div>
+				<div class="di">
+					<span>香菇肥牛宇宙无敌哈哈哈啊哈哈哈味牛肉味20g/袋</span>
+				</div>
+			</div>
+		</div>
+		<script src="../../jquery.js"></script>
+		<script type="text/javascript">
+			$('#close').click(function(){
+				$('#zhezhao').css('display','none')
+			})
+			$('#one').click(function(){
+				$('#zhezhao').css('display','block')
+			})
+			
+			$('#two').click(function(){
+				$('#zhezhao').css('display','block')
+			})
+		</script>
+	</body>
+
+</html>

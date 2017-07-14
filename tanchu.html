@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title></title>
+		<script type="text/javascript">
+			(function(doc, win) {
+				var docEl = doc.documentElement,
+					resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+					recalc = function() {
+						var clientWidth = docEl.clientWidth;
+						if(!clientWidth) return;
+						docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+					};
+				if(!doc.addEventListener) return;
+				win.addEventListener(resizeEvt, recalc, false);
+				doc.addEventListener('DOMContentLoaded', recalc, false);
+			})(document, window);
+		</script>
+		<link rel="stylesheet" type="text/css" href="css/dayang.css"/>
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<span><img src="img/jiantou.jpg"></span>
+				<h3 style="margin-left: 1.7rem;">确认订单</h3>
+			</header>
+			<section>
+				<div class="order">	
+					<div class="order-one">
+						<h3>张三<a href="#">153****7799</a></h3>
+						<b><img src="img/tubiao.png"><p>北京市海淀区上地七街北京八维研修学院网络营销</p><em><img src="img/tou.png"></em></b>
+					     <span><img src="img/xian.png"></span>
+					</div>
+				</div>	
+				
+				<div class="order1">
+					<div class="order-two">
+						<h4>备注<a href="#">宿舍没人 请给其他人打电话哈哈哈哈哈</a><b><img src="img/tou.png"></b></h4>
+					</div>
+				</div>
+				<div class="order2">
+					<h2></h2>
+					<p>北京八维哈哈哈啊哈哈哈哈哈哈啊哈哈哈哈</p>
+				</div>
+				
+				<div class="order3">
+					<dl>
+						<dt><img src="img/pao.png"></dt>
+						<dd>香飘飘 原味奶茶20kg/袋<a href="#">x1</a> <b>5¥</b></dd>
+					</dl>
+				</div>
+					<div class="order3">
+					<dl>
+						<dt><img src="img/pao.png"></dt>
+						<dd>香飘飘 原味奶茶20kg/袋<a href="#">x1</a> <b>5¥</b></dd>
+					</dl>
+				</div>
+					<div class="order3">
+					<dl>
+						<dt><img src="img/pao.png"></dt>
+						<dd>香飘飘 原味奶茶20kg/袋<a href="#">x1</a> <b>5¥</b></dd>
+					</dl>
+				</div>
+				<div class="oreder4">
+					<div class="a">
+					<h5>原价¥20</h5>
+					<a>优惠 -¥ 10</a>
+					<b>待支付</b>
+					<h6>¥7.5</h6>
+					</div>
+				</div>
+			</section>
+			<footer>
+				<div class="last">
+					<div class="left">
+						  <!--<input type="text" class="txt" />-->
+						  <h2 style="margin-left: 0.19rem;">待支付7¥</h2>
+					</div>
+					<div class="right">
+						<a href="bid_fenda.html"><span>打烊了</span></a>
+					</div>
+					
+				</div>	
+			</footer>
+			<div class="zhezhaotc"></div>
+			<div class="tanchu">
+				<h2>请确保收货地址<a href="#">北京八维研修学院</a></h2>
+				<h3>入股哟出粗和发过的很反感</h3>
+				<input type="text" class="t" value="取消"/><a href="dingdan.html"><input type="button" class="b" value="确定"/></a>
+			</div>
+		</div>
+	</body>
+	
+</html>

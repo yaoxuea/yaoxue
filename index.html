@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title></title>
+		<script type="text/javascript">
+			(function(doc, win) {
+				var docEl = doc.documentElement,
+					resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+					recalc = function() {
+						var clientWidth = docEl.clientWidth;
+						if(!clientWidth) return;
+						docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+					};
+				if(!doc.addEventListener) return;
+				win.addEventListener(resizeEvt, recalc, false);
+				doc.addEventListener('DOMContentLoaded', recalc, false);
+			})(document, window);
+		</script>
+		<link rel="stylesheet" type="text/css" href="css/guanjia.css"/>
+</head>
+<body>
+	<div class="container">
+		<header>
+			<span><img src="img/jiantou.jpg"></span><a href="#">请选择所在城市</a>
+		</header>
+		<section>
+			<div class="nav">
+				<a href="school_sou.html"><input type="text" class="txt"  value="搜索学校"/></a>
+				   
+			</div>
+			
+			<div class="nav1">
+				<h3><img src="img/asasa.jpg"> <a href="#">&nbsp;当前定义城市</a></h3>
+			   <h4>无法获取当前位置</h4>
+			</div>
+			<div class="nav2">
+				<div class="left">
+					<div class="a">
+						<a href=""><h1>E</h1></a>
+					</div>
+					
+				<div class="b">
+					<a href="school.html"><h4>鄂尔多斯</h4></a>
+				</div>
+				<div class="c">
+					<h4>峨眉山</h4>
+				</div>
+				<div class="c">
+					<h4>恩施</h4>
+				</div>
+				<div class="c">
+					<h4>鄂州</h4>
+				</div>
+				<div class="a">
+						<h1>F</h1>
+					</div>
+					<div class="c">
+					<h4>佛山</h4>
+				</div>
+				<div class="c">
+					<h4>抚顺</h4>
+				</div>
+				<div class="c">
+					<h4>阜阳</h4>
+				</div>
+				</div>
+				<div class="right">
+					<ul>
+						<li>A</li>
+						<li>B</li>
+						<li>C</li>
+						<li>D</li>
+						<li>E</li>
+						<li>F</li>
+						<li>G</li>
+						<li>H</li>
+						<li>I</li>
+						<li>J</li>
+						<li>K</li>
+						<li>L</li>
+						<li>M</li>
+						<li>N</li>
+						<li>O</li>
+						<li>P</li>
+						<li>Q</li>
+						<li>R</li>
+						<li>S</li>
+						<li>T</li>
+						<li>U</li>
+						<li>V</li>
+						<li>W</li>
+						<li>X</li>
+						<li>V</li>
+						<li>Z</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="e">
+				<p>E</p>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
